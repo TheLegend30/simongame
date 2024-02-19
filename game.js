@@ -47,7 +47,12 @@ const gameOver = function () {
   $("body").addClass("game-over");
   setTimeout(() => {
     $("body").removeClass("game-over");
-  }, 50);
+  }, 200);
+
+  startOver();
+};
+
+const startOver = function () {
   level = 0;
   gamePattern = [];
 };
